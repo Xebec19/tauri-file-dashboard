@@ -3,12 +3,10 @@ import ReactDOM from "react-dom/client";
 import "./styles.css";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import { ThemeProvider } from "./components/theme-provider";
-import Home from "./components/pages/home";
 import Root from "./components/pages/root";
 import ErrorPage from "./components/pages/error-page";
-import IDPPage from "./components/pages/idp";
-import ActivityPage from "./components/pages/activity";
-import ClassifyPage from "./components/pages/classify";
+import Discovery from "./components/pages/discovery";
+import Mount from "./components/pages/mount";
 
 const router = createBrowserRouter([
   {
@@ -18,19 +16,11 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <Home />,
+        element: <Discovery />,
       },
       {
-        path: "/idp",
-        element: <IDPPage />,
-      },
-      {
-        path: "/activity",
-        element: <ActivityPage />,
-      },
-      {
-        path: "/classify",
-        element: <ClassifyPage />,
+        path: "/mount",
+        element: <Mount />,
       },
     ],
   },
