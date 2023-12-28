@@ -1,5 +1,4 @@
 import { ChevronsUpDown, File, Folder } from "lucide-react";
-import { Button } from "../../components/ui/button";
 import {
   CollapsibleTrigger,
   CollapsibleContent,
